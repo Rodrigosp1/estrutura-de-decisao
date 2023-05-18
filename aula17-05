@@ -36,20 +36,66 @@ if (num>=0){
   alert('O número digitado é positivo.')
 }else{
   alert('O número digitado é negativo.')
-}*/
+}
 
+//5° QUESTÃO
 
-var faltante = (17 - verificador);  
 var anoatual = prompt('Digite o ano atual: ');
 var anonasc = prompt('Digite o ano do seu nascimento');
 var verificador = (anoatual - anonasc);
-
+var faltante = (17 - verificador);  
     
 
 if (verificador > 16){
   alert('Vocẽ poderá votar esse ano.')
 }else{
   alert('Você NÃO poderá votar esse ano.')
-  console.log('Falta apenas '+faltante+'anos para poder votar');
+  console.log('Falta apenas '+faltante+' ano(s) para poder votar');
 }
+
+//6° QUESTÃO
+
+var n1 = prompt('Digite o primeiro número')
+var n2 = prompt('Digite o segundo número')
+
+if (n1>n2){
+  alert('O maior número é: '+n1+' \nO menor número é '+n2)
+  
+}else{
+  alert('O maior número é: '+n2+' \nO menor número é '+n1)
+}
+
+//7° QUESTÃO
+
+var n1 = prompt('Digite o primeiro número: ');
+var n2 = prompt('Digite o segundo número: ');
+var n3 = prompt('Digite o terceiro número: ')
+
+maior = n1
+
+if (n2 > n1){
+  maior = n2
+}
+else if (n3>n2){
+  maior = n3
+}
+
+alert('O maior número digitado foi: '+maior)
+*/
+
+// 8°QUESTÃO
+
+var fome = prompt('Você está com fome?')
+
+if (fome == 'sim'){
+  var dinheiro = prompt('Você tem dinheiro para comer?')
+  if (dinheiro == 'sim'){
+    alert('Vá para o McDonalds')
+  }
+}else{
+  alert('Vai fazer algo de bom.')
+  
+}
+
+
 
